@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Products</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="page1.html" class="nav-button">Home</a></li>
+                <li><a href="page1.html" class="nav-button">Products</a></li>
+                <li><a href="#addProductSection" class="nav-button">Add Product</a></li>
+                <li><a href="#removeProductSection" class="nav-button">Remove Product</a></li>
+                <li><a href="contact.html" class="nav-button">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <input type="password" id="password" placeholder="Enter Password" class="input-box">
+        <button id="checkPassword" class="button">Check Password</button>
+        <div id="manageProducts" style="display:none;">
+            <div id="addProductSection" class="box">
+                <h2>Add New Product</h2>
+                <form id="addProductForm">
+                    <input type="text" id="productTitle" placeholder="Product Title" required class="input-box">
+                    <input type="text" id="productDescription" placeholder="Product Description" required class="input-box">
+                    <input type="url" id="productImage" placeholder="Product Image URL" required class="input-box">
+                    <button type="submit" class="button">Add Product</button>
+                </form>
+            </div>
+            <div id="removeProductSection" class="box">
+                <h2>Remove Product</h2>
+                <select id="productSelect" class="input-box"></select>
+                <button id="removeProduct" class="button">Remove Product</button>
+            </div>
+            <p id="message"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MyStore. All rights reserved.</p>
+    </footer>
+
+    <script src="manage.js"></script>
+</body>
+</html>
